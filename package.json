@@ -1,0 +1,22 @@
+{
+  "name": "craftbeer",
+  "version": "1.0.0",
+  "description": "MERN CraftBeer shopping cart",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicGeo/CraftBeer.git"
+  },
+  "author": "Victor Sanchis Iglesias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vicGeo/CraftBeer/issues"
+  },
+  "homepage": "https://github.com/vicGeo/CraftBeer#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
