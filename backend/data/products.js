@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'Pack 1 Premium',
     image: '/images/Pack1.png',
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: '2',
     name: 'Pack 2 Premium',
     image: '/images/Pack2.png',
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '3',
     name: 'Pack 3 Premium',
     image: '/images/Pack3.png',
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 9,
   },
   {
-    _id: '4',
     name: 'Pack 4 Premium',
     image: '/images/Pack4.png',
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '5',
     name: 'Pack 5 Premium',
     image: '/images/Pack5.png',
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '6',
     name: 'Pack 6 Premium',
     image: '/images/test.png',
     description:
