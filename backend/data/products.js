@@ -5,10 +5,10 @@ const products = [
     image: '/images/Pack1.png',
     description:
       'Proin in imperdiet enim, a feugiat nibh. Cras at iaculis velit. Nullam rhoncus, nisl sed venenatis pulvinar, quam metus ultrices justo',
-    brand: 'Apple',
+    brand: 'Craft',
     category: 'Beer',
     price: 29.99,
-    countInStock: 10,
+    countInStock: 0,
     rating: 4.5,
     numReviews: 4,
   },
@@ -18,7 +18,7 @@ const products = [
     image: '/images/Pack2.png',
     description:
       'Proin in imperdiet enim, a feugiat nibh. Cras at iaculis velit. Nullam rhoncus, nisl sed venenatis pulvinar, quam metus ultrices justo',
-    brand: 'Apple',
+    brand: 'Craft',
     category: 'Beer',
     price: 29.99,
     countInStock: 7,
@@ -31,7 +31,7 @@ const products = [
     image: '/images/Pack3.png',
     description:
       'Proin in imperdiet enim, a feugiat nibh. Cras at iaculis velit. Nullam rhoncus, nisl sed venenatis pulvinar, quam metus ultrices justo',
-    brand: 'Cannon',
+    brand: 'Craft',
     category: 'Beer',
     price: 29.99,
     countInStock: 5,
@@ -44,7 +44,7 @@ const products = [
     image: '/images/Pack4.png',
     description:
       'TProin in imperdiet enim, a feugiat nibh. Cras at iaculis velit. Nullam rhoncus, nisl sed venenatis pulvinar, quam metus ultrices justo',
-    brand: 'Sony',
+    brand: 'Craft',
     category: 'Beer',
     price: 29.99,
     countInStock: 11,
@@ -57,7 +57,7 @@ const products = [
     image: '/images/Pack5.png',
     description:
       'Proin in imperdiet enim, a feugiat nibh. Cras at iaculis velit. Nullam rhoncus, nisl sed venenatis pulvinar, quam metus ultrices justo',
-    brand: 'Logitech',
+    brand: 'Craft',
     category: 'Beer',
     price: 29.99,
     countInStock: 7,
@@ -70,7 +70,7 @@ const products = [
     image: '/images/test.png',
     description:
       'Proin in imperdiet enim, a feugiat nibh. Cras at iaculis velit. Nullam rhoncus, nisl sed venenatis pulvinar, quam metus ultrices justo',
-    brand: 'Amazon',
+    brand: 'Craft',
     category: 'Beer',
     price: 19.99,
     countInStock: 0,
