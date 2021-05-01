@@ -10,7 +10,7 @@ import { listProductDetails } from "../actions/productActions";
 const ProductScreen = ({ history, match }) => {
 
   // Select quantity of product
-  const [qty, setQty] = useState(0); // zero by default
+  const [qty, setQty] = useState(1); // one by default
 
 
 
