@@ -5,14 +5,19 @@ const products = require('./data/products');
 const { notFound } = require('./middleware/errorMiddleware.js');
 const { errorHandler } = require('./middleware/errorMiddleware.js');
 
+
+// Routes
 const productRoutes = require('./routes/productRoutes');
+const userRoutes = require('./routes/userRoutes');
 
 dotenv.config();
 connectDB();
 const app = express();
+app.use(express.json());
 
 
 app.use('/api/products', productRoutes);
+app.use('/api/users', userRoutes);
 
 // Custom error handling
 app.use(notFound);
