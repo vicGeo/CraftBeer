@@ -5,8 +5,6 @@ const { getProducts, getProductById } = require('../controllers/productControlle
 
 router.route('/').get(getProducts);
 
-
-
 router.route('/:id').get(getProductById);
 
 
