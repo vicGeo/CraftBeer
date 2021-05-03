@@ -8,8 +8,8 @@ const products = [
     category: 'Beer',
     price: 29.99,
     countInStock: 0,
-    rating: 4.5,
-    numReviews: 4,
+    rating: 0,
+    numReviews: 0,
   },
   {
     name: 'Pack 2 Premium',
@@ -20,8 +20,8 @@ const products = [
     category: 'Beer',
     price: 29.99,
     countInStock: 7,
-    rating: 4.0,
-    numReviews: 8,
+    rating: 0,
+    numReviews: 0,
   },
   {
     name: 'Pack 3 Premium',
@@ -32,8 +32,8 @@ const products = [
     category: 'Beer',
     price: 29.99,
     countInStock: 5,
-    rating: 3,
-    numReviews: 9,
+    rating: 0,
+    numReviews: 0,
   },
   {
     name: 'Pack 4 Premium',
@@ -44,8 +44,8 @@ const products = [
     category: 'Beer',
     price: 29.99,
     countInStock: 11,
-    rating: 5,
-    numReviews: 12,
+    rating: 0,
+    numReviews: 0,
   },
   {
     name: 'Pack 5 Premium',
@@ -56,8 +56,8 @@ const products = [
     category: 'Beer',
     price: 29.99,
     countInStock: 7,
-    rating: 3.5,
-    numReviews: 10,
+    rating: 0,
+    numReviews: 0,
   },
   {
     name: 'Pack 6 Premium',
@@ -68,8 +68,8 @@ const products = [
     category: 'Beer',
     price: 19.99,
     countInStock: 0,
-    rating: 4,
-    numReviews: 5,
+    rating: 0,
+    numReviews: 0,
   },
 ]
 
