@@ -1,9 +1,9 @@
 const asyncHandler = require("express-async-handler");
 const Order = require("../models/orderModel");
 
-// @desc Create new order
-// @route POST /api/orders
-// @access Private
+// @desc    Create new order
+// @route   POST /api/orders
+// @access  Private
 const addOrderItems = asyncHandler(async (req, res) => {
   const {
     orderItems,
@@ -13,12 +13,12 @@ const addOrderItems = asyncHandler(async (req, res) => {
     taxPrice,
     shippingPrice,
     totalPrice,
-  } = req.body;
+  } = req.body
 
   if (orderItems && orderItems.length === 0) {
-    res.status(400);
-    throw new Error("No order items");
-    return;
+    res.status(400)
+    throw new Error("No order items")
+    return
   } else {
     const order = new Order({
       orderItems,
