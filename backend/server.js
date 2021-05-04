@@ -10,6 +10,7 @@ const cors = require('cors')
 // Routes
 const productRoutes = require('./routes/productRoutes');
 const userRoutes = require('./routes/userRoutes');
+const orderRoutes = require('./routes/orderRoutes');
 
 dotenv.config();
 connectDB();
@@ -29,6 +30,7 @@ app.use(express.json());
 
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/orders', orderRoutes);
 
 // Custom error handling
 app.use(notFound);
