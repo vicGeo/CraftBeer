@@ -6,6 +6,7 @@ const { notFound } = require("./middleware/errorMiddleware.js");
 const { errorHandler } = require("./middleware/errorMiddleware.js");
 const cors = require("cors");
 const path = require("path");
+const morgan = require('morgan');
 
 // Routes
 const productRoutes = require("./routes/productRoutes.js");
@@ -16,6 +17,11 @@ const uploadRoutes = require("./routes/uploadRoutes.js");
 dotenv.config();
 connectDB();
 const app = express();
+
+if(process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'))
+}
+
 app.use(cors());
 app.use(express.json());
 
