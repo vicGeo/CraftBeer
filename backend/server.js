@@ -8,9 +8,9 @@ const cors = require('cors')
 
 
 // Routes
-const productRoutes = require('./routes/productRoutes');
-const userRoutes = require('./routes/userRoutes');
-const orderRoutes = require('./routes/orderRoutes');
+const productRoutes = require('./routes/productRoutes.js');
+const userRoutes = require('./routes/userRoutes.js');
+const orderRoutes = require('./routes/orderRoutes.js');
 
 dotenv.config();
 connectDB();
