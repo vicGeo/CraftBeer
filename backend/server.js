@@ -33,9 +33,9 @@ app.get("/api/config/paypal", (req, res) =>
 app.use(notFound);
 app.use(errorHandler);
 
-// Turn folder uploads static
-const dirname = path.resolve()
-app.use('/uploads', express.static(path.join(dirname, '/uploads')))
+// Turn on folder uploads static
+const folder = path.resolve();
+app.use('/uploads', express.static(path.join(folder, '/uploads')));
 
 app.get("/", (req, res) => {
   res.send("API is running...");
