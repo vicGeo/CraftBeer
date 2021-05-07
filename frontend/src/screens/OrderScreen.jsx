@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import moment from "moment";
 import { Link } from "react-router-dom";
 import { Row, Col, ListGroup, Image, Card, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
@@ -15,6 +16,7 @@ import {
 } from "../constants/orderConstants";
 import axios from "axios";
 import { PayPalButton } from "react-paypal-button-v2";
+moment.locale('es');
 
 const OrderScreen = ({ match, history }) => {
   const orderId = match.params.id;
@@ -63,7 +65,7 @@ const OrderScreen = ({ match, history }) => {
       document.body.appendChild(script);
     };
 
-    if (!order || successPay || successDeliver) {
+    if (!order || successPay || successDeliver || order._id !== orderId) {
       dispatch({ type: ORDER_PAY_RESET });
       dispatch({ type: ORDER_DELIVER_RESET });
       dispatch(getOrderDetails(orderId));
@@ -112,7 +114,7 @@ const OrderScreen = ({ match, history }) => {
               </p>
               {order.isDelivered ? (
                 <Message variant="success">
-                  Delivered on {order.deliveredAt}
+                  Delivered on {moment(order.deliveredAt).format('DD/MM/YYYY, HH:mm:ss')}
                 </Message>
               ) : (
                 <Message variant="danger">Not Delivered</Message>
@@ -126,7 +128,7 @@ const OrderScreen = ({ match, history }) => {
                 {order.paymentMethod}
               </p>
               {order.isPaid ? (
-                <Message variant="success">Paid on {order.paidAt}</Message>
+                <Message variant="success">Paid on {moment(order.paidAt).format('DD/MM/YYYY, HH:mm:ss')}</Message>
               ) : (
                 <Message variant="danger">Not Paid</Message>
               )}
@@ -141,7 +143,7 @@ const OrderScreen = ({ match, history }) => {
                   {order.orderItems.map((item, index) => (
                     <ListGroup.Item key={index}>
                       <Row>
-                        <Col md={1}>
+                        <Col md={2}>
                           <Image
                             src={item.image}
                             alt={item.name}
