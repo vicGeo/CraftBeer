@@ -11,6 +11,7 @@ const SearchBox = ({ history }) => {
     } else {
         history.push('/')
     }
+    e.target.reset();
   }
 
   return (
