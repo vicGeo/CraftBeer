@@ -7,7 +7,7 @@ const Product = require("../models/productModel");
 // @access Public
 const getProducts = asyncHandler(async (req, res) => {
   // Adding pagination and searching
-  const pageSize = 3;
+  const pageSize = 6;
   const page = Number(req.query.pageNumber) || 1;
   const keyword = req.query.keyword
     ? {
@@ -149,6 +149,16 @@ const createProductReview = asyncHandler(async (req, res) => {
   }
 });
 
+// @desc    Get top rated products
+// @route   GET /api/products/top
+// @access  Public
+const getTopProducts = asyncHandler(async (req, res) => {
+  const products = await Product.find({}).sort({ rating: -1}).limit(3)
+
+  res.json(products)
+
+});
+
 module.exports = {
   getProducts,
   getProductById,
@@ -156,4 +166,5 @@ module.exports = {
   createProduct,
   updateProduct,
   createProductReview,
+  getTopProducts
 };
