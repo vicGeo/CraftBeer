@@ -24,7 +24,9 @@ import {
   USER_UPDATE_SUCCESS,
   USER_UPDATE_FAIL,
 } from "../constants/userConstants";
-import { ORDER_LIST_MY_RESET } from "../constants/orderConstants";
+import { ORDER_LIST_MY_RESET, ORDER_CREATE_RESET } from "../constants/orderConstants";
+import { CART_RESET } from "../constants/cartConstants";
+import { PRODUCT_CREATE_REVIEW_RESET } from "../constants/productConstants";
 
 import axios from "axios";
 
@@ -65,13 +67,17 @@ export const login = (email, password) => async (dispatch) => {
 
 export const logout = () => (dispatch) => {
   localStorage.removeItem("userInfo");
-  localStorage.removeItem('cartItems')
-  localStorage.removeItem('shippingAddress')
-  localStorage.removeItem('paymentMethod')
+  localStorage.removeItem("cartItems");
+  localStorage.removeItem("shippingAddress");
+  localStorage.removeItem("paymentMethod");
   dispatch({ type: USER_LOGOUT });
   dispatch({ type: USER_DETAILS_RESET });
   dispatch({ type: ORDER_LIST_MY_RESET });
   dispatch({ type: USER_LIST_RESET });
+  dispatch({ type: CART_RESET });
+  dispatch({ type: ORDER_CREATE_RESET });
+  dispatch({ type: PRODUCT_CREATE_REVIEW_RESET });
+
 };
 
 export const register = (name, email, password) => async (dispatch) => {

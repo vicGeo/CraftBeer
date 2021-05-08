@@ -18,6 +18,7 @@ import {
   createProductReview,
 } from "../actions/productActions";
 import { PRODUCT_CREATE_REVIEW_RESET } from "../constants/productConstants";
+import { ORDER_CREATE_RESET } from "../constants/orderConstants";
 
 const ProductScreen = ({ history, match }) => {
   // Select quantity of product
@@ -53,6 +54,7 @@ const ProductScreen = ({ history, match }) => {
   // Cart Handler
   const addToCartHandler = () => {
     history.push(`/cart/${match.params.id}?qty=${qty}`);
+    dispatch({ type: ORDER_CREATE_RESET });
   };
 
   const submitHandler = (e) => {

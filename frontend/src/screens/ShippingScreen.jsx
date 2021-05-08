@@ -6,8 +6,8 @@ import CheckoutSteps from "../components/CheckoutSteps";
 import { saveShippingAddress } from "../actions/cartActions";
 
 const ShippingScreen = ({ history }) => {
-    const cart = useSelector(state => state.cart);
-    const { shippingAddress } = cart;
+  const cart = useSelector((state) => state.cart);
+  const { shippingAddress } = cart;
 
   const [address, setAddress] = useState(shippingAddress.address);
   const [city, setCity] = useState(shippingAddress.city);
@@ -15,18 +15,16 @@ const ShippingScreen = ({ history }) => {
   const [country, setCountry] = useState(shippingAddress.country);
 
   const dispatch = useDispatch();
-  
+
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(saveShippingAddress({address, city, postalCode, country}))
+    dispatch(saveShippingAddress({ address, city, postalCode, country }));
     history.push("/payment");
-
   };
 
-  
   return (
     <FormContainer>
-    <CheckoutSteps step1 step2/>
+      <CheckoutSteps step1 step2 />
       <h1>Shipping</h1>
       <Form onSubmit={submitHandler}>
         <Form.Group controlId="address">

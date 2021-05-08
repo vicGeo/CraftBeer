@@ -19,6 +19,7 @@ import {
   PRODUCT_CREATE_REVIEW_REQUEST,
   PRODUCT_CREATE_REVIEW_SUCCESS,
   PRODUCT_CREATE_REVIEW_FAIL,
+  PRODUCT_CREATE_REVIEW_RESET,
   PRODUCT_TOP_REQUEST,
   PRODUCT_TOP_SUCCESS,
   PRODUCT_TOP_FAIL,
@@ -55,6 +56,7 @@ export const listProductDetails = (id) => async (dispatch) => {
       type: PRODUCT_DETAILS_SUCCESS,
       payload: data,
     });
+    dispatch({ type: PRODUCT_CREATE_REVIEW_RESET });
   } catch (error) {
     dispatch({
       type: PRODUCT_DETAILS_FAIL,
