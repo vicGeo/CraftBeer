@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Col, Row, Badge } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import Product from "../components/Product";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
@@ -8,6 +8,7 @@ import Paginate from "../components/Paginate";
 import { listProducts } from "../actions/productActions";
 import ProductCarousel from "../components/ProductCarousel";
 import imageHero from "../images/hero_section.png";
+import imageHero2 from "../images/hero_section2.png";
 
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword;
@@ -27,27 +28,22 @@ const HomeScreen = ({ match }) => {
     <>
       {!keyword && (
         <div className="hero-section">
-        <Row>
-          <Col md={6}>
-            <h4>Hello, world!</h4>
-            <p>
-              This is a simple hero unit, a simple jumbotron-style component for
-              calling extra attention to featured content or information.
-            </p>
-            <p>
-              <h2>
-                Example heading{" "}
-                <Badge variant="warning">
-                  FREE SHIPPING ON ORDERS OVER 60€ !!!
-                </Badge>
-              </h2>
-            </p>
-
-          </Col>
-          <Col md={6}>
-          <img src={imageHero} alt="logo"/>
-          </Col>
-        </Row>
+          <Row>
+            <Col md={6}>
+              <h1>Hello, beer drinker!</h1>
+              <p>
+              Order the best craft beers on the market.
+              </p>
+              <p>
+                <h4 className="text-hero">
+                    FREE SHIPPING ON ORDERS OVER 60€
+                </h4>
+              </p>
+            </Col>
+            <Col md={5}>
+              <img className="float-right"  src={imageHero2} alt="logo" />
+            </Col>
+          </Row>
         </div>
       )}
       {!keyword && <ProductCarousel />}

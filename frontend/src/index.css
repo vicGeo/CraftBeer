@@ -21,11 +21,21 @@ h2 {
 
 .hero-section {
   margin: 3rem;
+  padding: 1rem;
+}
+
+.text-hero {
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: #FFFBC8;
+  text-align: center;
 }
 
 .logo {
   height: 60px;
 }
+
 
 .rating span {
   margin: 0.1rem;
@@ -36,6 +46,7 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
 
 /* carousel */
 .carousel-item-next,
