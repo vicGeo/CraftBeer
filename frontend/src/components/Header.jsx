@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { logout } from "../actions/userActions";
 import SearchBox from "../components/SearchBox";
+import logo from "../images/logo.svg";
+
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -21,7 +23,9 @@ const Header = () => {
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>Craft-Beer</Navbar.Brand>
+            <Navbar.Brand>Craft-Beer
+            <img className="logo" src={logo} alt="logo"></img>
+            </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

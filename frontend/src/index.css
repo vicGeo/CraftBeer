@@ -1,7 +1,10 @@
 main {
   min-height: 80vh;
+  /* background-image: url('https://i.imgur.com/PqaKsiN.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; */
 }
-
 h3 {
   padding: 1rem 0;
 }
@@ -14,6 +17,14 @@ h1 {
 h2 {
   font-size: 1.4rem;
   padding: 0.5rem 0;
+}
+
+.hero-section {
+  margin: 3rem;
+}
+
+.logo {
+  height: 60px;
 }
 
 .rating span {
@@ -63,4 +74,4 @@ h2 {
 
 img {
   height: 220px;
-} 
+}

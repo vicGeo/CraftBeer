@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Badge } from "react-bootstrap";
 import Product from "../components/Product";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 import Paginate from "../components/Paginate";
 import { listProducts } from "../actions/productActions";
 import ProductCarousel from "../components/ProductCarousel";
+import imageHero from "../images/hero_section.png";
 
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword;
@@ -24,7 +25,32 @@ const HomeScreen = ({ match }) => {
 
   return (
     <>
-    {!keyword && <ProductCarousel />}
+      {!keyword && (
+        <div className="hero-section">
+        <Row>
+          <Col md={6}>
+            <h4>Hello, world!</h4>
+            <p>
+              This is a simple hero unit, a simple jumbotron-style component for
+              calling extra attention to featured content or information.
+            </p>
+            <p>
+              <h2>
+                Example heading{" "}
+                <Badge variant="warning">
+                  FREE SHIPPING ON ORDERS OVER 60€ !!!
+                </Badge>
+              </h2>
+            </p>
+
+          </Col>
+          <Col md={6}>
+          <img src={imageHero} alt="logo"/>
+          </Col>
+        </Row>
+        </div>
+      )}
+      {!keyword && <ProductCarousel />}
       <h1 className="text-center">Latest Products</h1>
       {loading ? (
         <Loader />
