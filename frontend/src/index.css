@@ -1,9 +1,6 @@
 main {
   min-height: 80vh;
-  /* background-image: url('https://i.imgur.com/PqaKsiN.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; */
+
 }
 h3 {
   padding: 1rem 0;
@@ -83,6 +80,10 @@ h2 {
   }
 }
 
+.float-right {
+  height: 240px;
+}
+
 img {
-  height: 220px;
+  /* height: 360px; */
 }

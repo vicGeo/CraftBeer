@@ -19,6 +19,8 @@ import {
 } from "../actions/productActions";
 import { PRODUCT_CREATE_REVIEW_RESET } from "../constants/productConstants";
 import { ORDER_CREATE_RESET } from "../constants/orderConstants";
+import moment from "moment";
+moment.locale('es');
 
 const ProductScreen = ({ history, match }) => {
   // Select quantity of product
@@ -164,7 +166,7 @@ const ProductScreen = ({ history, match }) => {
                   <ListGroup.Item key={review._id}>
                     <strong>{review.name}</strong>
                     <Rating value={review.rating} />
-                    <p>{review.createdAt.substring(0, 10)}</p>
+                    <p>{moment(review.createdAt).format('DD/MM/YYYY')}</p>
                     <p>{review.comment}</p>
                   </ListGroup.Item>
                 ))}

@@ -7,7 +7,7 @@ import Loader from "../components/Loader";
 import Paginate from "../components/Paginate";
 import { listProducts } from "../actions/productActions";
 import ProductCarousel from "../components/ProductCarousel";
-import imageHero from "../images/hero_section.png";
+// import imageHero from "../images/hero_section.png";
 import imageHero2 from "../images/hero_section2.png";
 
 const HomeScreen = ({ match }) => {
