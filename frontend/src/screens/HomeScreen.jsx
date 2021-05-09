@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Col, Row } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import Product from "../components/Product";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 import Paginate from "../components/Paginate";
 import { listProducts } from "../actions/productActions";
 import ProductCarousel from "../components/ProductCarousel";
-// import imageHero from "../images/hero_section.png";
-import imageHero2 from "../images/hero_section2.png";
+import imageHero from "../images/hero_section.png";
 
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword;
@@ -41,12 +41,12 @@ const HomeScreen = ({ match }) => {
               </p>
             </Col>
             <Col md={5}>
-              <img className="float-right"  src={imageHero2} alt="logo" />
+              <img className="float-right"  src={imageHero} alt="logo" />
             </Col>
           </Row>
         </div>
       )}
-      {!keyword && <ProductCarousel />}
+      {!keyword ? <ProductCarousel /> : <Link to='/' className='btn btn-light '>GO BACK</Link>}
       <h1 className="text-center">Latest Products</h1>
       {loading ? (
         <Loader />
