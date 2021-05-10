@@ -29,9 +29,9 @@ This project is a SPA (Single-page application) developed with the MERN stack. S
   - Proceed to checkout.
   - Place order.
   - Pay order with Paypal account sandbox (API Paypal).
-</br>
+
 **AdminUser flow**
-</br>
+
 
 - Admin
   - View all registered users.
@@ -80,10 +80,6 @@ Deploy on heroku: https://craftbeerapp.herokuapp.com/
 - Register User
 
 >![register](https://i.imgur.com/aiqaA7R.gif)
-
-- Add products to cart
->![](https://s3.gifyu.com/images/2021-05-10T16-40-04.gif)
-</br>
 
 - Checkout order
 >![](https://s3.gifyu.com/images/2021-05-10T16-56-441.gif)
