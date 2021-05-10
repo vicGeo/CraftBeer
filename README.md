@@ -77,29 +77,44 @@ Vr&LI5QQ
 
 Deploy on heroku: https://craftbeerapp.herokuapp.com/
 
-> Register User
-![register](https://i.imgur.com/aiqaA7R.gif)
+- Register User
 
-> Add products to cart
-![](https://s3.gifyu.com/images/2021-05-10T16-40-04.gif)
-> Checkout order
-![](https://s3.gifyu.com/images/2021-05-10T16-56-441.gif)
-> Pay order with paypal
-![](https://i.imgur.com/eRxb7OP.png)![](https://s3.gifyu.com/images/2021-05-10T17-20-301.gif)
-> Review product
-![](https://s3.gifyu.com/images/2021-05-10T17-26-13.gif)
-> Admin dashboard
-![](https://s3.gifyu.com/images/2021-05-10T17-36-32.gif)
-> Add product
-![](https://s3.gifyu.com/images/2021-05-10T17-49-30.gif)
-> Mark as delivered an order
-![](https://s3.gifyu.com/images/2021-05-10T18-04-30.gif)
-> Search a beer
-![](https://s3.gifyu.com/images/2021-05-10T18-11-35.gif)
-> Fully responsive
-![](https://i.imgur.com/nFN2wu0.png)
+>![register](https://i.imgur.com/aiqaA7R.gif)
 
+- Add products to cart
+>![](https://s3.gifyu.com/images/2021-05-10T16-40-04.gif)
+</br>
 
+- Checkout order
+>![](https://s3.gifyu.com/images/2021-05-10T16-56-441.gif)
+</br>
+
+- Pay order with paypal
+>![](https://i.imgur.com/eRxb7OP.png)![](https://s3.gifyu.com/images/2021-05-10T17-20-301.gif)
+</br>
+
+- Review product
+>![](https://s3.gifyu.com/images/2021-05-10T17-26-13.gif)
+</br>
+
+- Admin dashboard
+>![](https://s3.gifyu.com/images/2021-05-10T17-36-32.gif)
+</br>
+
+- Add product
+>![](https://s3.gifyu.com/images/2021-05-10T17-49-30.gif)
+</br>
+
+- Mark as delivered an order
+>![](https://s3.gifyu.com/images/2021-05-10T18-04-30.gif)
+</br>
+
+- Search a beer
+>![](https://s3.gifyu.com/images/2021-05-10T18-11-35.gif)
+</br>
+
+- Fully responsive
+>![](https://i.imgur.com/nFN2wu0.png)
 
 
 
